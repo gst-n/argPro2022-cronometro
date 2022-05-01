@@ -1,0 +1,15 @@
+<h1 class="text-center my-4 ">Argentina Programa - Cronometro Angular</h1>
+<div class="card w-50 h-50 justify-content-center mx-auto mt-5">
+    <div class="card-body border border-dark rounded">
+        <h1 class="text-center display-2"><time datetime="">{{hrs}} : {{min}} : {{sec}}</time></h1>
+        <button (click)="iniciarTimer()" id="start" class="my-2 btn btn-success d-block w-100 mt-5">Start</button>
+        <button (click)="clearTime()" id="stop" class="my-2 btn btn-success d-block w-100">Stop</button>
+        <button (click)="restartTime()" id="restart" class="my-2 btn btn-success d-block w-100">Restart</button>
+    </div>
+</div>
+"
+<div class="card w-50 h-50 mx-auto my-2 border border-dark rounded">
+    <div class="card-body text-center h4">
+        <h3>{{horalocal}}</h3> 
+    </div>
+</div>
