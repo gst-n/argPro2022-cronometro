@@ -14,6 +14,7 @@ export class CronometroComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
   sec:number = 0;
   min:number = 0;
   hrs:number = 0;
@@ -36,6 +37,8 @@ export class CronometroComponent implements OnInit {
       }
     }, 1000)
   }
+
+
   restartTime(){
     this.sec = 0;
     this.min = 0;
@@ -46,6 +49,7 @@ export class CronometroComponent implements OnInit {
     console.log("pause")
    return clearInterval(this.intervalo);
   }
+
 
 
 }
